@@ -1,0 +1,32 @@
+.curso {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 10rem;
+    margin: 5rem 0;
+}
+.curso_grid {
+    display: grid;
+    column-gap: 5rem;
+}
+@media (min-width: 768px) {
+    .curso_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.contenido {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido {
+        grid-column: 2 / 3;
+    }
+}
+.contenido h2 {
+    color: var(--primary);
+}
+.curso .contenido p {
+    color: var(--white);
+    font-size: 2.4rem;
+}
